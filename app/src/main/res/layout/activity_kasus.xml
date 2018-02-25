@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_kasus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ibu"
+    android:backgroundTint="@color/pias"
+    android:backgroundTintMode="src_in"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.abdulwahab.mmt.com.example.abdulwahab.SIBAYU.FragmentMenu.Kasus">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layoutkepala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinerdatakasus"
+                android:clipChildren="true"
+                android:entries="@array/Desa"
+                android:spinnerMode="dropdown"
+                android:layout_marginBottom="20dp" />
+
+            <TextView />
+
+            <Button
+                android:text="Lihat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lihat" />
+
+        </TableRow>
+
+            <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Jumlah ibu hamil"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/jml_ibu_hamil" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tableRow">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Umur ibu kurang dari 20th"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k1" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Umur ibu >=35"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k2" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Jarak kehamilan kurang dari 2 th"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k3" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="KEK"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k4" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Anemia Hb Kurang dari 11g/dl"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k5" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="TB Kurang dari 145 Cm"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k6" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Kelainan bentuk panggul"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textk7" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Riwayat hipertensi sebelumnya"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k8" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k8" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Menderita penyakit kronis"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k9" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textk9" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Riwayat kehamilan buruk"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k10" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k10" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Riwayat persalinan komoplikasi"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k11" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k11" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Riwayat nifas komplikasi"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k12" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k12" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Penyakit riwayat keluarga"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k13" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k13" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Ketuban pecah dini"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k14" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Perdarahan pervaginam"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k15" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k15" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="HDK"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k16" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Ancaman prematur"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k17" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k17" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Infeksi berat dalam hamil"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k18" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Distosia"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k19" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k19" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Infeksi masa nifas"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k20" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k20" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Kelainan tumbuh janin"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k21" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k21" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Kehamilan ganda"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k22" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k22" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Kelainan besar janin"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k23" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k23" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="Kelainan letak"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:id="@+id/k24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:elevation="10dp"
+                android:text="  :"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_k24" />
+
+        </TableRow>
+
+
+    </TableLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

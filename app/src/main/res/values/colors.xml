@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="putih">#ffffff</color>
+    <color name="bgKedua">#fdff00ff</color>
+    <color name="bgUtama">#ff00cc</color>
+    <color name="colorPrimary">#c0d6ba</color>
+    <color name="colorPrimaryDark">#efd5ead5</color>
+    <color name="colorAccent">#ed87898c</color>
+    <color name="colorBackground">#34ff45</color>
+    <color name="transparan">#00d12727</color>
+    <color name="hitam">#000000</color>
+    <color name="pias">#20696666</color>
+    <color name="abang">#ff0000</color>
+    <color name="ijo">#0011ff</color>
+</resources>

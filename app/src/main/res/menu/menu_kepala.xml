@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/guesmale"
+        android:id="@+id/btn_login"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="kepala">
+        <menu>
+            <item android:title="Halaman Utama"
+                android:icon="@drawable/depan"
+                android:id="@+id/depan"/>
+            <item android:title="Keluar"
+                android:icon="@drawable/keluar"
+                android:id="@+id/keluar"/>
+        </menu>
+    </item>
+</menu>

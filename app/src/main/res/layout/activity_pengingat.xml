@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ibu"
+    tools:context="com.example.abdulwahab.mmt.com.example.abdulwahab.SIBAYU.FragmentMenu.FragmenPengingatBidan">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:text="Reminder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView12"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="top|center" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:stretchColumns="1,1,1"
+        android:layout_marginTop="239dp"
+        android:id="@+id/maintable">
+
+    </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

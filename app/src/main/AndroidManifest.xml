@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.abdulwahab.mmt"
+    android:versionCode="2">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ico"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name="com.example.abdulwahab.mmt.Activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.abdulwahab.mmt.Activity.loading">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.abdulwahab.mmt.Activity.DasborBidan" />
+        <activity android:name="com.example.abdulwahab.mmt.Activity.PeriksaIbuHamil" />
+        <activity android:name="com.example.abdulwahab.mmt.FragmentMenu.FragmenPengingatBidan" />
+        <activity android:name="com.example.abdulwahab.mmt.Activity.DasborKepala" />
+        <activity
+            android:name="com.example.abdulwahab.mmt.FragmentMenu.IbuHamil"
+            android:label="@string/title_activity_ibu_hamil"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.example.abdulwahab.mmt.FragmentMenu.Kematian" />
+        <activity android:name="com.example.abdulwahab.mmt.FragmentMenu.Kasus" />
+        <activity android:name="com.example.abdulwahab.mmt.Activity.MenuAwal"></activity>
+    </application>
+
+</manifest>

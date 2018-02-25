@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ibu"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.abdulwahab.mmt.FragmentMenu.FragmenPengingatBidan">
+
+    <TextView
+        android:id="@+id/namabumil"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/namasuami"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/desa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/resiko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textStyle="bold" />
+</LinearLayout>

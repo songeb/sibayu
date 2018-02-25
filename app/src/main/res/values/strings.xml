@@ -1,0 +1,430 @@
+<resources>
+    <string name="app_name"> SI BAYU</string>
+    <string name="command">Insert minimum 2 letters</string>
+
+
+    <string name="title_activity_ibu_hamil">IbuHamil</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="spinerstatuskehamilan">
+    <item>Siapa Yang Meninggal?</item>
+        <item>ibu meninggal</item>
+        <item>bayi meninggal</item>
+        <item>semua meninggal</item>
+        <item>semua selamat</item>
+    </string-array>
+    <string-array name="Puskesmas">
+        <item>Pilih Puskesmas</item>
+        <item>	ANJATAN	</item>
+        <item>	BABADAN	</item>
+        <item>	BALONGAN	</item>
+        <item>	BANGO DUA	</item>
+        <item>	BONGAS	</item>
+        <item>	BUGIS	</item>
+        <item>	CANTIGI	</item>
+        <item>	CEMARA	</item>
+        <item>	CIDEMPET	</item>
+        <item>	CIKEDUNG	</item>
+        <item>	CIPANCUH	</item>
+        <item>	DRUNTEN WETAN	</item>
+        <item>	GABUS WETAN	</item>
+        <item>	GANTAR	</item>
+        <item>	HAUR GEULIS	</item>
+        <item>	JATI BARANG	</item>
+        <item>	JATISAWIT	</item>
+        <item>	JUNTI NYUAT	</item>
+        <item>	KANDANG HAUR	</item>
+        <item>	KAPLONGAN	</item>
+        <item>	KARANG AMPEL	</item>
+        <item>	KEDOKAN BUNDER	</item>
+        <item>	KEDUNGWUNGU	</item>
+        <item>	KERTA SEMAYA	</item>
+        <item>	KERTAWINANGUN	</item>
+        <item>	KERTICALA	</item>
+        <item>	KIAJARAN WETAN	</item>
+        <item>	KRANGKENG	</item>
+        <item>	KROYA	</item>
+        <item>	LELEA	</item>
+        <item>	LOH BENER	</item>
+        <item>	LOSARANG	</item>
+        <item>	MARGADADI	</item>
+        <item>	PASEKAN	</item>
+        <item>	PATROL	</item>
+        <item>	PLUMBON	</item>
+        <item>	PONDOH	</item>
+        <item>	SIDAMULYA	</item>
+        <item>	SINDANG	</item>
+        <item>	SLIYEG	</item>
+        <item>	SUKAGUMIWANG	</item>
+        <item>	SUKRA	</item>
+        <item>	TAMBI	</item>
+        <item>	TEMIYANG	</item>
+        <item>	TERISI	</item>
+        <item>	TUGU	</item>
+        <item>	TUKDANA	</item>
+        <item>	WANAKAYA	</item>
+        <item>	WIDASARI	</item>
+
+    </string-array>
+    <string-array name="Kecamatan">
+        <item>Pilih Kecamatan</item>
+        <item>	 Anjatan	</item>
+        <item>	 Arahan	</item>
+        <item>	 Balongan	</item>
+        <item>	 Bangodua	</item>
+        <item>	 Bongas	</item>
+        <item>	 Cantigi	</item>
+        <item>	 Cikedung	</item>
+        <item>	 Gabuswetan	</item>
+        <item>	 Gantar	</item>
+        <item>	 Haurgeulis	</item>
+        <item>	 Indramayu	</item>
+        <item>	 Jatibarang	</item>
+        <item>	 Juntinyuat	</item>
+        <item>	 Kandanghaur	</item>
+        <item>	 Karangampel	</item>
+        <item>	 Kedokan Bunder	</item>
+        <item>	 Kertasemaya	</item>
+        <item>	 Krangkeng	</item>
+        <item>	 Kroya	</item>
+        <item>	 Lelea	</item>
+        <item>	 Lohbener	</item>
+        <item>	 Losarang	</item>
+        <item>	 Pasekan	</item>
+        <item>	 Patrol	</item>
+        <item>	 Sindang	</item>
+        <item>	 Sliyeg	</item>
+        <item>	 Sukagumiwang	</item>
+        <item>	 Sukra	</item>
+        <item>	 Terisi	</item>
+        <item>	 Tukdana	</item>
+        <item>	 Widasari	</item>
+
+    </string-array>
+
+    <string-array name="Desa">
+        <item>Pilih Desa</item>
+        <item>	Amis	</item>
+        <item>	Anjatan	</item>
+        <item>	Anjatan Baru	</item>
+        <item>	Anjatan Utara	</item>
+        <item>	Arahan Kidul	</item>
+        <item>	Arahan Lor	</item>
+        <item>	Arjasari	</item>
+        <item>	Babadan	</item>
+        <item>	Babakanjaya	</item>
+        <item>	Baleraja	</item>
+        <item>	Balongan	</item>
+        <item>	Bangkaloa Ilir	</item>
+        <item>	Bangodua	</item>
+        <item>	Bantarwaru	</item>
+        <item>	Beduyut	</item>
+        <item>	Benda	</item>
+        <item>	Bodas	</item>
+        <item>	Bogor	</item>
+        <item>	Bojongsari	</item>
+        <item>	Bojongslawi	</item>
+        <item>	Bondan	</item>
+        <item>	Bongas	</item>
+        <item>	Brondong	</item>
+        <item>	Bugel	</item>
+        <item>	Bugis	</item>
+        <item>	Bugistua	</item>
+        <item>	Bulak	</item>
+        <item>	Bulak Lor	</item>
+        <item>	Bunder	</item>
+        <item>	Candangpinggan	</item>
+        <item>	Cangkingan	</item>
+        <item>	Cangkringan	</item>
+        <item>	Cangok	</item>
+        <item>	Cantigi Kulon	</item>
+        <item>	Cantigi Wetan	</item>
+        <item>	Cemara	</item>
+        <item>	Cempeh	</item>
+        <item>	Cibeber	</item>
+        <item>	Cibereng	</item>
+        <item>	Cidempet	</item>
+        <item>	Cikawung	</item>
+        <item>	Cikedung	</item>
+        <item>	Cikedung Lor	</item>
+        <item>	Cilandak	</item>
+        <item>	Cilandak LOr	</item>
+        <item>	Cipaat	</item>
+        <item>	Cipancu	</item>
+        <item>	Cipedang	</item>
+        <item>	Curug	</item>
+        <item>	Dadap	</item>
+        <item>	Dermayu	</item>
+        <item>	Drunten Kulon	</item>
+        <item>	Drunten Wetan	</item>
+        <item>	Dukuh	</item>
+        <item>	Dukuhjati	</item>
+        <item>	Dukuhjeruk	</item>
+        <item>	Dukuhtengah	</item>
+        <item>	Eretan Kulon	</item>
+        <item>	Eretan Wetan	</item>
+        <item>	Gabuskulon	</item>
+        <item>	Gabuswetan	</item>
+        <item>	Gadel	</item>
+        <item>	Gadingan	</item>
+        <item>	Gantar	</item>
+        <item>	Gelarmendala	</item>
+        <item>	Gunungsari	</item>
+        <item>	Haurgeulis	</item>
+        <item>	Haurkolot	</item>
+        <item>	Ilir	</item>
+        <item>	Jambak	</item>
+        <item>	Jambe	</item>
+        <item>	Jangga	</item>
+        <item>	Jatibarang	</item>
+        <item>	Jatibarang Baru	</item>
+        <item>	Jatimulya	</item>
+        <item>	Jatisawit	</item>
+        <item>	Jatisawit Lor	</item>
+        <item>	Jatisura	</item>
+        <item>	Jayalaksana	</item>
+        <item>	Jayamulya	</item>
+        <item>	Jayawinangun	</item>
+        <item>	Jengkok	</item>
+        <item>	Jatimanunggul	</item>
+        <item>	Jumbleng	</item>
+        <item>	Junti Kebon	</item>
+        <item>	Juntikedokan	</item>
+        <item>	Juntinyuat	</item>
+        <item>	Juntiweden	</item>
+        <item>	Kalensari	</item>
+        <item>	Kalianyar	</item>
+        <item>	Kalimati	</item>
+        <item>	Kaplongan	</item>
+        <item>	Kaplonganlor	</item>
+        <item>	Kapringan	</item>
+        <item>	Karang Layung	</item>
+        <item>	Karangampel	</item>
+        <item>	Karanganyar	</item>
+        <item>	Karanganyar	</item>
+        <item>	Karanganyar	</item>
+        <item>	Karangasem	</item>
+        <item>	Karanggetas	</item>
+        <item>	Karangkerta	</item>
+        <item>	Karangmalang	</item>
+        <item>	Karangmulya	</item>
+        <item>	Karangsong	</item>
+        <item>	Karangtumaritis	</item>
+        <item>	Kasmaran	</item>
+        <item>	Kebulen	</item>
+        <item>	Kedokan Agung	</item>
+        <item>	Kedokanbunder	</item>
+        <item>	Kedokanbunder Wetan	</item>
+        <item>	Kedokangabus	</item>
+        <item>	Kedungdawa	</item>
+        <item>	Kedungwungu	</item>
+        <item>	Kedungwungu	</item>
+        <item>	Kenanga	</item>
+        <item>	Kendayakan	</item>
+        <item>	Kepandean	</item>
+        <item>	Kertacila	</item>
+        <item>	Kertajaya	</item>
+        <item>	Kertamulya	</item>
+        <item>	Kertanegara	</item>
+        <item>	Kertasmaya	</item>
+        <item>	Kertawinangun	</item>
+        <item>	Kiajaran Kulon	</item>
+        <item>	Kiajaran Wetan	</item>
+        <item>	Kliwed	</item>
+        <item>	Kongsijaya	</item>
+        <item>	Kopyah	</item>
+        <item>	Krangkeng	</item>
+        <item>	Krasak	</item>
+        <item>	Krimun	</item>
+        <item>	Kroya	</item>
+        <item>	Lajer	</item>
+        <item>	Lamarantarung	</item>
+        <item>	Langgengsari	</item>
+        <item>	Langut	</item>
+        <item>	Lanjan	</item>
+        <item>	Larangan	</item>
+        <item>	Laranganjambe	</item>
+        <item>	Legok	</item>
+        <item>	Lelea	</item>
+        <item>	Lemahabang	</item>
+        <item>	Lemahayu	</item>
+        <item>	Lemahmekar	</item>
+        <item>	Lempuyang	</item>
+        <item>	Leuwigede	</item>
+        <item>	Limbangan	</item>
+        <item>	Limpas	</item>
+        <item>	Linggajati	</item>
+        <item>	Lobener	</item>
+        <item>	Lobener Lor	</item>
+        <item>	Lohbener	</item>
+        <item>	Lombang	</item>
+        <item>	Longok	</item>
+        <item>	Losarang	</item>
+        <item>	Loyang	</item>
+        <item>	Luwunggesik	</item>
+        <item>	Majakerta	</item>
+        <item>	Majasari	</item>
+        <item>	Majasih	</item>
+        <item>	Malangsari	</item>
+        <item>	Malangsemirang	</item>
+        <item>	Manggungan	</item>
+        <item>	Mangunjaya	</item>
+        <item>	Manguntara	</item>
+        <item>	Margadadi	</item>
+        <item>	Margamulya	</item>
+        <item>	Mekargading	</item>
+        <item>	Mekarjati	</item>
+        <item>	Mekarjaya	</item>
+        <item>	Mekarsari	</item>
+        <item>	Mekarsari	</item>
+        <item>	Mulyasari	</item>
+        <item>	Mundakjaya	</item>
+        <item>	Mundu	</item>
+        <item>	Muntur	</item>
+        <item>	Nunuk	</item>
+        <item>	Pabeanilir	</item>
+        <item>	Pabeanudik	</item>
+        <item>	Pagedangan	</item>
+        <item>	Pagirikan	</item>
+        <item>	Pamayahan	</item>
+        <item>	Pangauban	</item>
+        <item>	Pangkalan	</item>
+        <item>	Panyindangan Kulon	</item>
+        <item>	Panyindangan Wetan	</item>
+        <item>	Panyingkiran Kidul	</item>
+        <item>	Panyingkiran Lor	</item>
+        <item>	Paoman	</item>
+        <item>	Parean Girang	</item>
+        <item>	Pasekan	</item>
+        <item>	Patrol	</item>
+        <item>	Patrol Baru	</item>
+        <item>	Patrol lor	</item>
+        <item>	Pawidean	</item>
+        <item>	Pegagan	</item>
+        <item>	Pekandangan	</item>
+        <item>	Pekandangan Jaya	</item>
+        <item>	Penganjang	</item>
+        <item>	Pilangsari	</item>
+        <item>	Plawangan	</item>
+        <item>	Plosokerep	</item>
+        <item>	Plumbon	</item>
+        <item>	Pondoh	</item>
+        <item>	Pranggong	</item>
+        <item>	Pringgacala	</item>
+        <item>	Puntang	</item>
+        <item>	Purwajaya	</item>
+        <item>	Rajaiyang	</item>
+        <item>	Rajasinga	</item>
+        <item>	Rambatan Kulon	</item>
+        <item>	Rambatan Wetan	</item>
+        <item>	Rancahan	</item>
+        <item>	Rancajawat	</item>
+        <item>	Rancamulya	</item>
+        <item>	Rancasari	</item>
+        <item>	Ranjeng	</item>
+        <item>	Rawadalem	</item>
+        <item>	Salamdarma	</item>
+        <item>	Sambimaya	</item>
+        <item>	Sanca	</item>
+        <item>	Santing	</item>
+        <item>	Segeran	</item>
+        <item>	Segeran Kidul	</item>
+        <item>	Sekarmulya	</item>
+        <item>	Sendang	</item>
+        <item>	Sidadadi	</item>
+        <item>	Sidamulya	</item>
+        <item>	Sindang	</item>
+        <item>	Sindangkerta	</item>
+        <item>	Singajaya	</item>
+        <item>	Singakerta	</item>
+        <item>	Singaraja	</item>
+        <item>	Situraja	</item>
+        <item>	Sleman	</item>
+        <item>	Sleman Lor	</item>
+        <item>	Sliyeg	</item>
+        <item>	Sliyeg lor	</item>
+        <item>	Soge	</item>
+        <item>	Srengseng	</item>
+        <item>	Sudikampiran	</item>
+        <item>	Sudimampir	</item>
+        <item>	Sudimampir lor	</item>
+        <item>	Sukadadi	</item>
+        <item>	Sukadana	</item>
+        <item>	Sukagumiwang	</item>
+        <item>	Sukahaji	</item>
+        <item>	Sukajati	</item>
+        <item>	Sukalila	</item>
+        <item>	Sukamelang	</item>
+        <item>	Sukamulya	</item>
+        <item>	Sukaperna	</item>
+        <item>	Sukareja	</item>
+        <item>	Sukasari	</item>
+        <item>	Sukaslamet	</item>
+        <item>	Sukaurip	</item>
+        <item>	Sukawera	</item>
+        <item>	Sukra	</item>
+        <item>	Sukrawetan	</item>
+        <item>	Sumbermulya	</item>
+        <item>	Sumbon	</item>
+        <item>	Sumuradem	</item>
+        <item>	Sumuradem Timur	</item>
+        <item>	Tamansari	</item>
+        <item>	Tambak	</item>
+        <item>	Tambi	</item>
+        <item>	Tambi Lor	</item>
+        <item>	Tanjakan	</item>
+        <item>	Tanjungkerta	</item>
+        <item>	Tanjungpura	</item>
+        <item>	Tanjungsari	</item>
+        <item>	Tawangsari	</item>
+        <item>	Tegalgirang	</item>
+        <item>	Tegalmulya	</item>
+        <item>	Tegalsembadra	</item>
+        <item>	Tegaltaman	</item>
+        <item>	Tegalurung	</item>
+        <item>	Tegalwirangrong	</item>
+        <item>	Telagasari	</item>
+        <item>	Telukagung	</item>
+        <item>	Temiyang	</item>
+        <item>	Temiyangsari	</item>
+        <item>	Tempel	</item>
+        <item>	Tempelkulon	</item>
+        <item>	Tenajar	</item>
+        <item>	Tenajar Kidul	</item>
+        <item>	Tenajar Lor	</item>
+        <item>	Terusan	</item>
+        <item>	Tinumpuk	</item>
+        <item>	Totoran	</item>
+        <item>	Tresna	</item>
+        <item>	Tugu	</item>
+        <item>	Tugu	</item>
+        <item>	Tugu Kidul	</item>
+        <item>	Tukdana	</item>
+        <item>	Tulungagung	</item>
+        <item>	TunggulPayung	</item>
+        <item>	Ujungaris	</item>
+        <item>	Ujunggebang	</item>
+        <item>	Ujungjaya	</item>
+        <item>	Ujungpendokjaya	</item>
+        <item>	Wanakaya	</item>
+        <item>	Wanantara	</item>
+        <item>	Wanasari	</item>
+        <item>	Wanguk	</item>
+        <item>	Waru	</item>
+        <item>	Widasari	</item>
+        <item>	Wirakanah	</item>
+        <item>	Wirapanjunan	</item>
+
+    </string-array>
+    <string-array name="jaminan">
+
+        <item>Pilih Jaminan</item>
+        <item>BPJS</item>
+        <item>KASEP</item>
+        <item>JAMPEDA</item>
+        <item>UMUM</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/ibu"
+    tools:context="com.example.abdulwahab.mmt.com.example.abdulwahab.SIBAYU.Activity.PeriksaIbuHamil">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparan"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:text="Input Data Kematian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="20dp" />
+
+            <EditText
+                android:id="@+id/namabumil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Bumil"
+                style="@style/Widget.AppCompat.EditText" />
+
+            <EditText
+                android:id="@+id/namasuamibumil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Suami"
+                style="@style/Widget.AppCompat.EditText" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinercekkematian"
+                android:clipChildren="true"
+                android:entries="@array/spinerstatuskehamilan"
+                android:spinnerMode="dropdown"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/sebab"
+                android:hint="ketik sebab kematian" />
+
+            <Button
+                android:id="@+id/simmpandata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:backgroundTint="@color/bgKedua"
+                android:text="Simpan"
+                android:textColor="@color/putih"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

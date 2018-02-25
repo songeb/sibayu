@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_dasbor_bidan"
+    android:layout_alignParentStart="true"
+    android:weightSum="1"
+    tools:context="com.example.abdulwahab.mmt.actifity.BarResikoTertinggi"
+    android:layout_alignParentLeft="true">
+
+    <TextView
+        android:text="5 Desa Dengan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Resiko Tertinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/grafikresiko"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:layout_weight="0.58"
+        android:layout_marginBottom="60dp" />
+</LinearLayout>
